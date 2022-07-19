@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>palindrome</title>
+</head>
+<body>
+<p>enter string</p>
+<input id="txt" type="text">
+<button onclick="checkIt()">check</button>
+<p id="demo"></p>
+<script>
+function checkIt(){
+var x=document.getElementById("txt").value;
+var y=x[0].toUpperCase() + x.slice(1);
+document.getElementById("demo").innerHTML=y;
+}
+</script>
+</body>
+</html>

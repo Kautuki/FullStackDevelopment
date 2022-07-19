@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>javascript</title>
+</head>
+<body>
+<p>enter a number</p>
+<input id="num" value="1">
+<button onclick="checkNum()">check</button>
+<p id="demo"></p>
+<script>
+function checkNum() {
+var num,res;
+num=document.getElementById("num").value;
+res=(num < 0) ? "negative" : "positive";
+document.getElementById("demo").innerHTML="number" + " "+ "is" + " " + res;
+} 
+</script>
+</body>
+</html>

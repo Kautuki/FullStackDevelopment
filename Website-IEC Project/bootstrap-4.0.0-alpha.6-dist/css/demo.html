@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>pract</title>
+<link rel="stylesheet" href="bootstrap.css">
+</head>
+<script src="js/bootstrap.min.js" type="text/javascript">
+function validate(){
+	var x=document.getElementById('email').value;
+	var y=document.getElementById('password').value;
+	if(x == ""  || y == "")
+	{
+	alert('enter username and password');
+	}
+}
+</script>
+<body>
+<form action=" " method=" " class="form-group">
+<div class="form-group">
+	<label for="email">email</label>
+	<input type="email" class="form-control" id="email" >
+</div>
+<div class="form-group">
+	<label for="password">password</label>
+	<input type="password" class="form-control" id="password">
+</div>
+<input type="submit" class="btn btn-success"  onclick="validate()" value="submit">
+</body>
+</html>

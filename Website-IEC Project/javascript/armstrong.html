@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>armstrong</title>
+</head>
+<script>
+function armNum(){
+var num=document.getElementById("num").value;
+var t,sum=0,a;
+for(a=n;a>0;a=a/10)
+{
+t=a%10;
+sum=sum+(t*t*t);
+}
+if(num==sum)
+{
+document.write("palindrome");
+}
+else
+{
+document.write("not palindrome");
+}
+}
+</script>
+<body>
+<p>enter a number</p>
+<input type="text" id="num">
+<button onclick="armNum()">check</button>
+<p id="demo"></p>
+</body>
+</html>

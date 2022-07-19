@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+
+<title>LOGIN | AURANGABAD</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">  
+
+  <script src="jquery-1.11.3.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+
+</head>
+
+<body>
+<div class="container-fluid">
+<a href="main.html" class="btn btn-success btn-lg fix">HOME</a>
+<a href="About.html" class="btn btn-warning btn-lg fix1">ABOUT</a>
+<a href="gallary.html" class="btn btn-danger btn-lg fix2">GALLARY</a>
+ <div class="jk">
+      <h1 class="text-center">LOGIN TO AURANGABAD TOURISM</h1>
+       <form name="form1">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" placeholder="Add Name" required>
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" class="form-control" placeholder="Add Email" required>
+        </div>
+ <div class="form-group">
+          <label>Password</label>
+          <input type="password" class="form-control" placeholder="password" name="text1" required>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea class="form-control" placeholder="Add Message"  required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <select class="form-control">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Remember me
+          </label>
+        </div>
+
+<input type="submit" class="btn btn-success" value="LOGIN" onclick="CheckPassword(document.form1.text1)">
+       <input type="reset" class="btn btn-warning" value="Reset"> 
+        </form>
+	</div>
+</div>
+
+
+
+
+<script>
+function CheckPassword(inputtxt)   
+{   
+var paswd=  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;  
+if(inputtxt.value.match(paswd))   
+{   
+
+return true;  
+}  
+else  
+{   
+alert('ENTER 8 DIGIT PASSWORD WHICH CONTAINS AT LEAST 1 DIGIT AND 1 SYMBOLL') 
+return false;  
+}  
+} 
+	</script>
+</body>
+</html>

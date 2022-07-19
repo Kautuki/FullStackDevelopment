@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>sum of digits</title>
+</head>
+<body>
+<p>enter number</p>
+<input id="num">
+<button onclick="sumIs()">sum</button>
+<p id = "demo"></p>
+<script>
+function sumIs(){
+var num,q,r;
+var sum=0;
+num=document.getElementById("num").value;
+for(var i=num;i>=1;i--)
+{
+q=num/10;
+r=num%10;
+sum=sum+r;
+num=q; 
+}
+document.getElementById("demo").innerHTML="the" + " " +"sum" + " " +"is" + " " + sum;
+}
+</script>
+</body>
+</html>

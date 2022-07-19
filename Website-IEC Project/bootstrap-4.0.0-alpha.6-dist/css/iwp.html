@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>iwp</title>
+<link rel="stylesheet" href="bootstrap.css">
+<style>
+body{background-color:black;
+}
+.header{
+	height:90px;
+	width:1330px;
+	background-color:dimgray;
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+	padding:20px;
+	text-align:center;
+	border:2px solid white;
+}
+.nav{
+	height:70px;
+	width:1330px;
+	background-color:white;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:10px;
+	text-color:white;
+	padding:20px;
+	text-align: center;
+	border:1px solid white;
+
+
+}
+.nav ul li{
+	display:inline;
+	text-decoration:none;
+	padding:50px;
+	}
+.nav a{	
+	padding:30px;
+	text-decoration:none;
+
+}
+.nav a:hover{
+	color:antiquewhite;
+	background:green;
+}
+.container{
+	height:460px;
+	width:1330px;
+	float:left;
+	background:dimgray;
+	margin-top:5px;
+	margin-left:10px;
+	margin-right:5px;
+	border:3px black dotted;
+	}
+.sidebar{
+	height:440px;
+	width:400px;
+	background:white;
+	border:3px solid black;
+	float:right;
+	font-size:10px;
+	margin-top:10px;
+	}	
+</style>
+</head>
+<script>
+  function checkPassword(){
+        var pass=  /^[A-Za-z]\w{3,14}$/;  
+        var name= document.getElementById("name")
+        if (name.value.match(pass))
+            {alert('name is valid')
+            return true;
+            }
+        else{
+            alert('name must contain a capital and must be 3 to 14 characters long')
+            return false;
+        }
+}
+</script>
+<body>
+<div class="header">
+<h1>webpage</h1>
+</div>
+<div class="nav">
+<ul>
+<li><a href="#">home</a></li>
+<li><a href="#">details</a></li>
+<li><a href="#">gallery</a></li>
+<li><a href="#">contact</a></li>
+<li><a href="#">bye</a></li>
+</ul>
+</div>
+<div class="container">
+<h3>bye iwp</h3>
+<div class="sidebar">
+<form action=" " method=" " class="container-fluid">
+<legend>FORM</legend>
+<div class="form-group">
+	<label for="email">EMAIL</label>
+	<input type="email" class="form-control" id="email" required/>
+</div>
+<div class="form-group">
+	<label for="name">NAME</label>
+	<input type="text" class="form-control" id="name" required/>
+</div>
+<div class="form-group">
+	<label for="contact">CONTACT</label>
+	<input type="contact" class="form-control" id="contact" required/>
+</div>
+<div class="form-group">
+	<label for="password">PASSWORD</label>
+	<input type=""password" class="form-control" id="password" required/><br>
+<button type="button" id="eye" onclick="if(password.type=='text')password.type='password';else password.type='text';">hide</button>
+</div>
+<input type="submit" class="btn btn-success"  onclick="checkPassword()" value="submit">
+<input type="reset" class="btn btn-danger" value="reset">
+</div>
+</div>
+
+
+
+</div>
+</div>
+</body>
+</html>

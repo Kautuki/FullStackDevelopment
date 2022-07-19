@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>factorial</title>
+</head>
+<body>
+<p>enter a number</p>
+<input id="n">
+<button onclick="factIs()">factorial</button>
+<p id="demo"></p>
+<script>
+function factIs(){
+var n,i;
+var fact=1;
+n=document.getElementById("n").value;
+for(i=n;i>=1;i--){
+fact=fact*i;
+}
+document.getElementById("demo").innerHTML="the" + " " + "factorial" + " " + "is" + " " + fact;
+}
+</script>
+</body>
+</html> 

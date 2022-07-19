@@ -1,0 +1,40 @@
+<html>
+<head>
+<link rel="stylesheet" href="bootstrap.css">
+<title>form</title>
+<script>
+function validateForm(){
+var x=document.forms["myform"]["fname"].value;
+if(x==""){
+alert("enter name");
+return false;
+}
+var pass=/^[A-Za-z]\w{7,14}$/;
+var y=document.forms["myform"]["fpass"].value;
+if(y==""){
+alert("enter password");
+return false;
+}
+else
+{
+	if(y.value.match(pass))
+{
+alert("valid");
+return true;
+}
+else
+{
+alert("password length must be more");
+}
+}
+}
+</script>
+</head>
+<body>
+<form name="myform" onsubmit="return validateForm()">
+Name:<input type="text" name="fname" placeholder="name"><br><br>
+Password:<input type="password" name="fpass" placeholder="password"><br><br>
+<input type="submit"  class="btn bt-suuccess" value="submit">
+</form>
+</body>
+</html>

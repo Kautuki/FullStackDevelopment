@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>jquery</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#flip").click(function(){
+$("#panel").slideDown("slow");
+});
+});
+</script>
+<style>
+#panel,#flip{
+padding:5px;
+
+}
+#panel{
+display:none;}
+</style></head>
+<body>
+<div id="flip">click to slide</div>
+<div id="panel">hello world</div>
+</body></html>

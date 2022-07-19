@@ -1,0 +1,27 @@
+<html>
+<head>
+<link rel="stylesheet" href="bootstrap.css">
+<title>form</title>
+<script>
+function validateForm(){
+var x=document.forms["myform"]["fname"].value;
+if(x==""){
+alert("enter name");
+return false;
+}
+var y=document.forms["myform"]["fpass"].value;
+if(y==""){
+alert("enter password");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form name="myform" onsubmit="return validateForm()">
+Name:<input type="text" name="fname" placeholder="name"><br><br>
+Password:<input type="password" name="fpass" placeholder="password"><br><br>
+<input type="submit"  class="btn bt-suuccess" value="submit">
+</form>
+</body>
+</html>
